@@ -41,6 +41,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.imatter.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  matthieus
+# `repository` is consumed by the giscus comments include as data-repo.
+# Format: <github-owner>/<repo-name>. Update once the public blog repo
+# exists.
+repository: "matthieus/imatter"
 markdown: kramdown
 permalink: /:categories/:title/
 
@@ -50,6 +54,24 @@ plugins:
   - jekyll-feed
 
 minimal_mistakes_skin: "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Comments — giscus stores threads as GitHub Discussions on `repository`.
+# Setup: (1) make the repo public on GitHub, (2) enable Discussions in
+# the repo settings, (3) install the giscus app at
+# https://github.com/apps/giscus and grant it access to the repo,
+# (4) visit https://giscus.app, fill in the repo + a discussion
+# category (recommend creating one called "Comments" of type
+# Announcement), then copy the four data-* values it generates into
+# the placeholders below.
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : "REPLACE_WITH_data-repo-id_FROM_GISCUS_APP"
+    category_name        : "Comments"
+    category_id          : "REPLACE_WITH_data-category-id_FROM_GISCUS_APP"
+    discussion_term      : "pathname"  # one discussion per post URL
+    reactions_enabled    : 1
+    theme                : "light"
 
 # Silence Dart Sass deprecation warnings emitted from theme/vendor SCSS imports
 # (e.g. global color functions and `/` division in Minimal Mistakes & its Susy grid).
@@ -72,7 +94,8 @@ defaults:
       author_profile: true
       read_time: true
       share: true
-      related: true
+      related: false
+      comments: true
   # all standalone pages: single layout, sidebar with author profile (no read-time/share/related)
   - scope:
       path: ""
