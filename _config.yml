@@ -66,9 +66,9 @@ minimal_mistakes_skin: "contrast" # "default", "air", "aqua", "contrast", "dark"
 comments:
   provider: "giscus"
   giscus:
-    repo_id              : "REPLACE_WITH_data-repo-id_FROM_GISCUS_APP"
+    repo_id              : "R_kgDOSX6EVA"
     category_name        : "Comments"
-    category_id          : "REPLACE_WITH_data-category-id_FROM_GISCUS_APP"
+    category_id          : "DIC_kwDOSX6EVM4C8mP6"
     discussion_term      : "pathname"  # one discussion per post URL
     reactions_enabled    : 1
     theme                : "light"
