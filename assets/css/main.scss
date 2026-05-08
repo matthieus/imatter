@@ -1,0 +1,16 @@
+---
+# Local override of the theme's main stylesheet entry point.
+# Defines variables BEFORE the skin and main partials are imported so
+# they win the !default fallback inside the gem.
+search: false
+---
+
+@charset "utf-8";
+
+// Page background color. Matches the cream tone of blog_header.png so the
+// banner blends with the page and the margins outside the 1584px content
+// column stay visually consistent.
+$background-color: #f9efe0;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials

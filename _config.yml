@@ -1,0 +1,102 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: I Matthieu Scholler
+# Masthead-only title with HTML markup: visually mutes the "(hieu Scholl)" portion.
+# Plain `site.title` is still used for <title>, SEO meta, RSS feed, etc.
+# Renders as raw HTML — the local `_includes/masthead.html` override removes escape_once.
+masthead_title: 'I Matt<span class="site-title__muted">(hieu Scholl)</span>er'
+email: matthieu.scholler@gmail.com
+author:
+  name   : "Matthieu Scholler"
+  avatar : "/assets/images/avatar.jpg"
+  bio    : "Building software, and journaling the journey."
+  links:
+    - label: "Email"
+      icon : "fas fa-fw fa-envelope-square"
+      url  : "mailto:matthieu.scholler@gmail.com"
+    - label: "GitHub"
+      icon : "fab fa-fw fa-github"
+      url  : "https://github.com/matthieus"
+description: >- # this means to ignore newlines until "baseurl:"
+  I’m Matthieu Scholler. This blog is a journal of my journey building 
+  a startup: what I try, what I learn, and what I get wrong along the way.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.imatter.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  matthieus
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Build settings
+theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-feed
+
+minimal_mistakes_skin: "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Silence Dart Sass deprecation warnings emitted from theme/vendor SCSS imports
+# (e.g. global color functions and `/` division in Minimal Mistakes & its Susy grid).
+# `import` is also silenced because the theme's root stylesheet (assets/css/main.scss
+# in the gem) still uses `@import`, which is deprecated in Sass but not something we
+# can fix without forking the theme.
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+
+# Front matter defaults — applied to anything matching `scope`, overridable per-file.
+defaults:
+  # all posts: single layout, sidebar with author profile, read-time, share, related posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+  # all standalone pages: single layout, sidebar with author profile (no read-time/share/related)
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
