@@ -35,6 +35,9 @@ author:
     - label: "GitHub"
       icon : "fab fa-fw fa-github"
       url  : "https://github.com/matthieus"
+    - label: "LinkedIn"
+      icon : "fab fa-fw fa-linkedin"
+      url  : "https://www.linkedin.com/in/matthieuscholler/"
 description: >- # this means to ignore newlines until "baseurl:"
   I’m Matthieu Scholler. This blog is a journal of my journey building 
   a startup: what I try, what I learn, and what I get wrong along the way.
@@ -93,7 +96,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share: true
+      share: false
       related: false
       comments: true
   # all standalone pages: single layout, sidebar with author profile (no read-time/share/related)
