@@ -39,7 +39,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   I’m Matthieu Scholler. This blog is a journal of my journey building 
   a startup: what I try, what I learn, and what I get wrong along the way.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.imatter.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.imatter.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  matthieus
 # `repository` is consumed by the giscus comments include as data-repo.
 # Format: <github-owner>/<repo-name>. Update once the public blog repo
