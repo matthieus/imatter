@@ -9,6 +9,17 @@
     opacity: 0.45;
   }
 
+  /* Heads-up shown above the giscus widget so visitors know what's
+     about to load and that posting requires a GitHub account.
+     Injected by the local _includes/comments.html override. */
+  .comments-notice {
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+    font-size: 0.85em;
+    font-style: italic;
+    opacity: 0.7;
+  }
+
   /* Cap blog width at the banner image width (1584px). Beyond that, the
      html background shows in the side margins. body is also the
      positioning context for the absolute-positioned masthead overlay so
