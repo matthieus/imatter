@@ -60,6 +60,12 @@
     right: 0;
     aspect-ratio: 1584 / 293;
   }
+  /* The hero image is inline by default, leaving a baseline gap below
+     it that shows the html bg as a thin line between banner and
+     masthead. Make it a block. */
+  body.page-with-banner .page__hero-image {
+    display: block;
+  }
   body.page-with-banner .masthead {
     /* Percent vertical margins resolve against the containing block's
        width, so this equals body_width * 293/1584 — exactly the banner
@@ -67,6 +73,16 @@
     margin-top: calc(100% * 293 / 1584);
     background-color: #c9b698;
     border-bottom: none;
+  }
+  /* Theme gives the masthead ~64px of height via 1em vertical padding
+     on the inner-wrap and a 4em min-height on .greedy-nav. Trim both
+     so the band reads as a slim continuation of the floor strip. */
+  body.page-with-banner .masthead__inner-wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  body.page-with-banner .greedy-nav {
+    min-height: 0;
   }
   body.page-with-banner .greedy-nav,
   body.page-with-banner .greedy-nav .hidden-links {
