@@ -70,15 +70,13 @@
     width: 100%;
     pointer-events: auto;
     /* The banner image scales linearly with viewport width via the
-       aspect-ratio on .masthead, but font-size and 1em padding are
-       fixed, so on narrow screens the title/nav overflow the banner.
-       Scale padding and the vertical shift with the viewport so the
-       inner content keeps the same proportional position regardless
-       of screen size. The clamp MAX matches the previous static
-       value at viewport >= 1584px (the body cap), so desktop is
-       visually unchanged. */
+       aspect-ratio on .masthead, but the theme's fixed 1em padding
+       made title/nav overflow narrow banners. Scale the padding with
+       viewport so the bar shrinks with the banner; keep padding-bottom
+       at 0 so flex-end pins title/nav to the banner's bottom edge
+       (where the illustrated floor strip sits) at any width. */
     padding: clamp(0.3em, 1vw, 1em);
-    transform: translateY(clamp(0px, 1.25vw, 20px));
+    padding-bottom: 0;
   }
   /* Same idea for the title and nav typography: shrink with the
      banner so they always fit inside it. */
