@@ -22,8 +22,9 @@
 
   /* Cap blog width at the banner image width (1584px). Beyond that, the
      html background shows in the side margins. body is also the
-     positioning context for the absolute-positioned masthead overlay so
-     it stays inside the content column. */
+     positioning context for the absolutely-positioned banner image on
+     banner pages, which is pulled out of flow so the masthead can sit
+     directly below it. */
   html {
     background-color: #f9efe0;
   }
@@ -35,8 +36,7 @@
 
   /* The theme's `<nav class="skip-links">` doesn't match its SCSS
      selector `.skip-link` (singular vs plural), so no positioning styles
-     apply and the default <ul>/<li> line-boxes consume flow space,
-     pushing the banner down while the absolute masthead stays at top:0.
+     apply and the default <ul>/<li> line-boxes consume flow space.
      Take the wrapper out of flow entirely. The inner <a> elements use
      .screen-reader-shortcut which has its own :focus styles to become
      visible when focused, so accessibility is preserved. */
@@ -49,49 +49,28 @@
   }
 
   /* Pages opt in via `classes: [page-with-banner]` in front matter.
-     The masthead is lifted out of flow and floated over the page__hero
-     banner image so the title and nav appear as part of the banner.
-     The aspect-ratio matches blog_header.png (1584x340) so the masthead
-     box sits exactly over the banner; flex-end pins title/nav to the
-     bottom edge of the banner, where the illustrated floor strip sits. */
-  body.page-with-banner .masthead {
+     The banner image is lifted out of flow at the top of the body so
+     the masthead can sit directly below it as a separate band, sharing
+     the colour of the banner image's floor strip. The two together read
+     as a single illustrated header. */
+  body.page-with-banner .page__hero {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    aspect-ratio: 1584 / 340;
-    display: flex;
-    align-items: flex-end;
-    background-color: transparent;
+    aspect-ratio: 1584 / 293;
+  }
+  body.page-with-banner .masthead {
+    /* Percent vertical margins resolve against the containing block's
+       width, so this equals body_width * 293/1584 — exactly the banner
+       image's height at every viewport. */
+    margin-top: calc(100% * 293 / 1584);
+    background-color: #c9b698;
     border-bottom: none;
-    pointer-events: none;
-  }
-  body.page-with-banner .masthead__inner-wrap {
-    width: 100%;
-    pointer-events: auto;
-    /* The banner image scales linearly with viewport width via the
-       aspect-ratio on .masthead, but the theme's fixed 1em padding
-       made title/nav overflow narrow banners. Scale the padding with
-       viewport so the bar shrinks with the banner; keep padding-bottom
-       at 0 so flex-end pins title/nav to the banner's bottom edge
-       (where the illustrated floor strip sits) at any width. */
-    padding: clamp(0.3em, 1vw, 1em);
-    padding-bottom: 0;
-  }
-  /* Same idea for the title and nav typography: shrink with the
-     banner so they always fit inside it. */
-  body.page-with-banner .site-title,
-  body.page-with-banner .greedy-nav a {
-    font-size: clamp(0.7rem, 1vw, 1rem);
   }
   body.page-with-banner .greedy-nav,
   body.page-with-banner .greedy-nav .hidden-links {
     background: transparent;
-  }
-  /* Theme default is 2em; that gap reads as dead air between the banner
-     and the post list. Tighten it on banner pages. */
-  body.page-with-banner .page__hero {
-    margin-bottom: 0.5em;
   }
 </style>
 
