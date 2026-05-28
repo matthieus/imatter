@@ -2,13 +2,15 @@
 title: "Task Matter preview"
 date: 2026-05-14 10:00:00 +0100
 ---
-If I don't catch myself, I can babble for hours about what I want to do, imagining and promising the moon. I already wrote 5 drafts about the origin, the vision, or the reasoning behind the project. The truth is I already have something significant, unique, and from my experience, useful. Some things still don't work and need work, but I can at least give a preview.
+If I don't catch myself, I can babble for hours about what I want to do, imagining and promising the moon. I already wrote 5 draft posts about the origin, the vision, or the reasoning behind the project. The truth is I already have something significant, unique, and from my experience, useful. Some capabilities still need work, but I can at least give a preview and idea of what I'm working on.
 
-The AI software I'm building is both an enhanced AI chat, and a traditional UI to maintain a plan. Why do we need the traditional UI to maintain the plan? A plan is not code. It is a lot more trivial to complete a task, remove action items, or modify a title than doing any code change. And AI is also incredibly useful to magically create the plan, or adjust it. While using TaskMatter, I have realised manual and AI driven actions are astonishingly balanced.
+The project name is "Task Matter". Another post will go over what made me choose that name. It is a web app with desktop and mobile modes. The preview is desktop only, as the mobile one still has significant glitches.
 
-Enough babble, here comes the preview.
+Task Matter helps the user reach their goals, whatever these are. It manages Goals that contain tasks, that contain action items. I made a todo app! Well ... bear with me. That todo app has both an AI feed and a traditional UI to interact with the goal plans. Why do we need the traditional UI to maintain the plan and not just a chat? There is no way around it, if you want to achieve something you need to see what you need to be doing. Besides, it is a lot more trivial, and cheaper, to complete a task, remove action items, or modify a title manually than ask AI to do it. On the other hand, AI is incredibly useful to magically create the plan and adjust it based on new information. While using Task Matter, my usage pattern between manual and AI actions has been remarkably balanced, comforting the design choices.
 
-Creating goals is either manual or AI led.
+Below showcases the AI side. Manual entry is a bit too 90s software to be an interesting demo.
+
+Creating goals with AI can happen in different ways, below are a few examples:
 
 <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
   <source src="/assets/videos/posts/simple_create_goal_ai.mp4" type="video/mp4">
@@ -18,6 +20,11 @@ Creating goals is either manual or AI led.
 ![screenshot of user creating a goal plan](/assets/images/posts/TODO-create-goal-user.png) ![screenshot of AI creating the goal plan](/assets/images/posts/TODO-create-goal-ai.png)
 
 User or AI then move tasks in "Focus" for the coming week:
+
+<video autoplay loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
+  <source src="/assets/videos/posts/focus_prioritise_tasks.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ![screenshot of user checking a task to go in focus](/assets/images/posts/TODO-focus-user.png) ![screenshot of AI helping decide what to do for the week](/assets/images/posts/TODO-focus-ai.png)
 
