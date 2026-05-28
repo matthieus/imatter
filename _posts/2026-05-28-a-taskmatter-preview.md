@@ -1,6 +1,6 @@
 ---
 title: "Task Matter preview"
-date: 2026-05-14 10:00:00 +0100
+date: 2026-05-28 10:00:00 +0100
 ---
 If I don't catch myself, I can babble for hours about what I want to do, imagining and promising the moon. I already wrote 5 draft posts about the origin, the vision, or the reasoning behind the project. The truth is I already have something significant, and from my experience, useful. Some capabilities still need work, but I can at least give a preview and idea of what I'm working on.
 
