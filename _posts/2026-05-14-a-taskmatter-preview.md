@@ -41,14 +41,14 @@ Users can get guidance on a specific action item:
 </video>
 <br>
     
-Achievements show where I stand on some of my goals (bit of a personal disclosure here!):
+Achievements show where I stand on some of my goals (bit of a personal disclosure here! In particular, you can see I'm very late on the number of posts before end of May 😅):
 
 <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
   <source src="/assets/videos/posts/2026-05-28_11-42_achievements-celebrate-wins_636w_30fps.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 <br>
-The above shows the main capabilities as of today. It is the first feature scope I want to release through invites. But there is a lot more I am working on.
+The above shows the main capabilities as of today. It is the first set of features I want to release through invites. But there is a lot more I am working on.
 
 AI starts to shine when it is prompted to go deep on a subject. The concept of AI skill exists because of that behaviour. In traditional AI apps, AI has to guess what skills it is going to need based on previous prompting. No context, no skills. You may or may not have caught on the fact there is a different AI session for every goal, task, action item, and a global focus area chat. This means before any prompt, AI knows what we are focusing on from the system prompt. This also means the skills or third-party integration relevant to the scope are automatically loaded. In other words, you click on a goal/task/action item, and you get the right coach, consultant, or manager for the job. Tailoring the AI interaction, and UI, to the type of task at hand is what really get me excited about this project. Possibilities are infinite, and where there's infinite possibilities there's an opportunity to open to plugins and third-party developers.
 
