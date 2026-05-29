@@ -1,21 +1,33 @@
-name: Build and deploy Jekyll site to GitHub Pages
+name: Build and deploy imatter to VPS
+
+# Builds the Jekyll site and rsyncs the generated _site/ to the `imatter`
+# user on the VPS, which Caddy then serves at https://www.imatter.io.
+#
+# Migrated from GitHub Pages on 2026-05-29 to enable first-party Plausible
+# tracking (the Pages-hosted version was bypass-able by uBlock because the
+# analytics script was loaded third-party). The Caddy block lives in the
+# aiiwork repo at deploy/config/Caddyfile.template; the VPS-side setup
+# script is deploy/vps/setup-imatter.sh.
+#
+# Required repo secrets (Settings → Secrets and variables → Actions):
+#   IMATTER_DEPLOY_SSH_KEY      private SSH key for the `imatter` user
+#   IMATTER_DEPLOY_KNOWN_HOSTS  output of `ssh-keyscan -t ed25519 <vps-host>`
+#   VPS_HOST                    hostname or IP of the VPS
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
-  group: pages
+  group: imatter-deploy
+  # Don't cancel an in-flight deploy. If two pushes land close together,
+  # the second waits for the first — preserves the "what's deployed is
+  # what was last pushed" invariant.
   cancel-in-progress: false
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,28 +37,40 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.4"
+          # Caches `vendor/bundle` between runs keyed on Gemfile.lock.
+          # First build takes ~90s; cached builds ~20s.
           bundler-cache: true
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
 
       - name: Build site
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          # The private key is multiline; the heredoc preserves newlines
+          # that GitHub's secret substitution can otherwise mangle.
+          cat <<'EOF' > ~/.ssh/id_ed25519
+          ${{ secrets.IMATTER_DEPLOY_SSH_KEY }}
+          EOF
+          chmod 600 ~/.ssh/id_ed25519
+          # Pinned host key — refuses to connect to a different fingerprint,
+          # closes the door on a hostile-DNS / MITM scenario.
+          cat <<'EOF' > ~/.ssh/known_hosts
+          ${{ secrets.IMATTER_DEPLOY_KNOWN_HOSTS }}
+          EOF
+          chmod 644 ~/.ssh/known_hosts
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to VPS via rsync
+        run: |
+          # -a: archive (preserves mtime, perms, symlinks)
+          # -z: compress in transit
+          # --delete: remove files on VPS that no longer exist locally
+          #           (matches "what's deployed = last build" invariant)
+          # --exclude='.git*': defensive; _site/ shouldn't contain these
+          rsync -avz --delete \
+            --exclude='.git*' \
+            _site/ \
+            imatter@${{ secrets.VPS_HOST }}:/opt/aiiwork/imatter/
