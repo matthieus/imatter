@@ -93,4 +93,18 @@
   }
 </style>
 
+<!--
+  Plausible Analytics - self-hosted, privacy-first, no cookies/consent banner.
+  Loaded from the aiiwork-hosted Plausible instance at stats.taskmatter.ai.
+  Third-party origin (the blog is on GitHub Pages so we can't proxy it as
+  first-party), so a small fraction of aggressive blockers will skip it;
+  acceptable for a personal blog.
+
+  Gated on JEKYLL_ENV=production so `bundle exec jekyll serve` during local
+  authoring doesn't write events to the production analytics store.
+-->
+{% if jekyll.environment == "production" %}
+<script defer data-domain="imatter.io" src="https://stats.taskmatter.ai/js/script.js"></script>
+{% endif %}
+
 <!-- end custom head snippets -->

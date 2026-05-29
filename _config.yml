@@ -25,25 +25,25 @@ title: I Matthieu Scholler
 masthead_title: 'I Matt<span class="site-title__muted">(hieu Scholl)</span>er'
 email: matthieu.scholler@gmail.com
 author:
-  name   : "Matthieu Scholler"
-  avatar : "/assets/images/avatar.jpg"
-  bio    : "Building software, and journaling the journey."
+  name: "Matthieu Scholler"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "Building software, and journaling the journey."
   links:
     - label: "Email"
-      icon : "fas fa-fw fa-envelope-square"
-      url  : "mailto:matthieu.scholler@gmail.com"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:matthieu.scholler@gmail.com"
     - label: "GitHub"
-      icon : "fab fa-fw fa-github"
-      url  : "https://github.com/matthieus"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/matthieus"
     - label: "LinkedIn"
-      icon : "fab fa-fw fa-linkedin"
-      url  : "https://www.linkedin.com/in/matthieuscholler/"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/matthieuscholler/"
 description: >- # this means to ignore newlines until "baseurl:"
-  I’m Matthieu Scholler. This blog is a journal of my journey building 
+  I’m Matthieu Scholler. This blog is a journal of my journey building
   a startup: what I try, what I learn, and what I get wrong along the way.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.imatter.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  matthieus
+github_username: matthieus
 # `repository` is consumed by the giscus comments include as data-repo.
 # Format: <github-owner>/<repo-name>. Update once the public blog repo
 # exists.
@@ -69,12 +69,12 @@ minimal_mistakes_skin: "contrast" # "default", "air", "aqua", "contrast", "dark"
 comments:
   provider: "giscus"
   giscus:
-    repo_id              : "R_kgDOSX6EVA"
-    category_name        : "Comments"
-    category_id          : "DIC_kwDOSX6EVM4C8mP6"
-    discussion_term      : "pathname"  # one discussion per post URL
-    reactions_enabled    : 1
-    theme                : "light"
+    repo_id: "R_kgDOSX6EVA"
+    category_name: "Comments"
+    category_id: "DIC_kwDOSX6EVM4C8mP6"
+    discussion_term: "pathname" # one discussion per post URL
+    reactions_enabled: 1
+    theme: "light"
 
 # Silence Dart Sass deprecation warnings emitted from theme/vendor SCSS imports
 # (e.g. global color functions and `/` division in Minimal Mistakes & its Susy grid).
