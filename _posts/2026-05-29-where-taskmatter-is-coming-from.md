@@ -1,6 +1,6 @@
 ---
 title: "Where Task Matter is coming from"
-date: 2026-05-15 10:00:00 +0100
+date: 2026-05-29 10:00:00 +0100
 ---
 We are defined by what we do, both in relation to others, and in relation to ourselves. A year ago, what I was doing, or more exactly not doing, became a mental health issue for me.
 
