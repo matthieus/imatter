@@ -2,7 +2,7 @@
 title: "Task Matter's unusual tech stack, an overview"
 date: 2026-06-11 13:00:00 +0100
 ---
-Task Matter has an unusual tech stack. It started less as a careful architecture decision and more as a "let's try things and have fun" experiment. Then the fun things ended up working. I was not expecting that.
+Task Matter has an unusual tech stack. It started less as a careful architecture decision and more as a "let's try things and have fun" experiment. Then the fun things ended up working. Every interaction that's not calling AI feels instantaneous. I was not expecting that.
 
 So yes, this is partly a stack overview, and partly me retroactively justifying my choices now that they have become real product architecture.
 
