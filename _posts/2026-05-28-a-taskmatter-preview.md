@@ -12,14 +12,14 @@ Desktop is more polished at this stage, so the preview screencasts are desktop-o
 
 Creating goals with AI, either from a loose description ...
 
-<video autoplay loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
+<video loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
   <source src="/assets/videos/posts/2026-05-26_16-34_create-goal-ai_636w_30fps.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 <br>
 ... or pictures
 
-<video autoplay loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
+<video loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
   <source src="/assets/videos/posts/create_goal_ai_photos.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -27,7 +27,7 @@ Creating goals with AI, either from a loose description ...
 
 Now prioritising tasks in the "Focus" screen:
 
-<video autoplay loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
+<video loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
   <source src="/assets/videos/posts/focus_prioritise_tasks.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -35,7 +35,7 @@ Now prioritising tasks in the "Focus" screen:
     
 Users can get guidance on a specific action item:
 
-<video autoplay loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
+<video loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
   <source src="/assets/videos/posts/2026-05-28_11-12_running-plan-calf-adjust_636w_30fps.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -43,7 +43,7 @@ Users can get guidance on a specific action item:
     
 Achievements show where I stand on some of my goals (bit of a personal disclosure here! In particular, you can see I'm very late on the number of posts before end of May 😅):
 
-<video autoplay loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
+<video loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 12px;">
   <source src="/assets/videos/posts/2026-05-28_11-42_achievements-celebrate-wins_636w_30fps.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
