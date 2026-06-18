@@ -1,6 +1,6 @@
 ---
 title: "Claude Code is a bit like a cat"
-date: 2026-06-18 13:00:00 +0100
+date: 2026-06-17 13:00:00 +0100
 ---
 Claude Code is infuriating. It is helpful for sure, but it is also infuriating. Debugging complex issues with Claude Code gives you a false sense of safety. This is known, and I am used to it. The bit I am having difficulties with is the aftermath. Like cats, coding models always fall back on their feet. The model will find a small caveat it had missed, sure it's not much, and then make another round of fixes. More likely than not, the result is worse.
 
