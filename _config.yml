@@ -23,15 +23,14 @@ title: I Matthieu Scholler
 # Plain `site.title` is still used for <title>, SEO meta, RSS feed, etc.
 # Renders as raw HTML — the local `_includes/masthead.html` override removes escape_once.
 masthead_title: 'I Matt<span class="site-title__muted">(hieu Scholl)</span>er'
-email: matthieu.scholler@gmail.com
 author:
   name: "Matthieu Scholler"
   avatar: "/assets/images/avatar.jpg"
   bio: "Building software, and journaling the journey."
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:matthieu.scholler@gmail.com"
+    - label: "Task Matter"
+      icon: "taskmatter-icon"
+      url: "https://taskmatter.ai"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/matthieus"

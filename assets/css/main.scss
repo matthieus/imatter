@@ -14,3 +14,11 @@ $background-color: #f9efe0;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.author__urls .taskmatter-icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  background: url("/assets/images/wing_transparent.png") center / contain no-repeat;
+  vertical-align: -0.2em;
+}
