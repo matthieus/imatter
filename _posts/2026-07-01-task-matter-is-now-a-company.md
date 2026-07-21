@@ -1,6 +1,6 @@
 ---
 title: "Task Matter is now a company!"
-date: 2026-07-20 10:00:00 +0100
+date: 2026-07-01 10:00:00 +0100
 ---
 One of the big decisions when creating a product is when to incorporate. Should you first have users? Revenue? I don't have an answer to what one "should" do. But one aspect convinced me to just create the company early: liability. Simply put, if I do anything stupid I don't want to lose my house. Not that I'm planning to do anything stupid, mind you. And the risk is low. But it's one less thing to worry about.
 
