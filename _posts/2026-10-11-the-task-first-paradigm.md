@@ -45,16 +45,14 @@ How did task-first AI emerge from the work on Task Matter? The journey is too lo
 
 # What does the task-first AI experience look like?
 
-How do we focus on a task and talk to AI? Well, we click on the task and type our question.
+How do we focus on a task to talk to AI and work inside the plan? The starting idea is obvious: we click on a task and prompt.
 
-But to get to that experience, there are a bunch of questions to answer to make our whole workflow work. 
-- Do we even have an AI chat before the first plan is created?
+Now, how do we make the experience work in practice? For this, we'll need to answer a few key questions: 
+- Do we even have an AI chat before the goal plan is even created?
 - Where does the plan come from?
 - What if we want to ask questions about the whole project? 
 - Or what if we want to focus on an action item and ask that detail to death?
-- A task should have more than AI conversations to be defined, right?
-
-While the theory of a task-first AI interaction sounds great, making it work for both the user and the AI agent does imply answering these questions.
+- What makes a task? There's more than AI conversations to a task, am I right?
 
 Let's see how Task Matter answers them.
 
@@ -62,25 +60,25 @@ Let's see how Task Matter answers them.
 
 In Task Matter, the plan is on the left in a panel we call "Task". And if you're tempted to joke that the right panel is called "Matter", you'd be 100% right, that's its name.
 
-Plans are goal-oriented todo lists with 3 levels: goal, task, and action item. A goal can be long or short term, it is completely up to the user. In practice, you (or AI) will want to detail the first few weeks and gradually specify higher level tasks the further they are. And that's how the AI plan creation is tuned.
+Plans are goal-oriented todo lists with 3 levels: goal, task, and action item. The title is all that's needed to create an item. Most todo apps have a similar hierarchy of plan items. A goal can be long or short term, it is completely up to the user. In practice, you (or AI) will want to detail the first few weeks and gradually specify higher level tasks the further away they are. And that's how the AI plan creation is tuned.
 
-A task can be chosen to appear in the Focus area, which shows what we're working on. We can then work on our tasks and action items from Focus. These tasks could belong to any sort of goal. One could have DIY, cooking, and software projects in their Focus, which is what my Focus looks like these days.
+A task can be chosen to appear in the Focus area, which shows what we're working on. We can then work on our tasks and action items from Focus. In their Focus, one could have tasks from DIY, cooking, and software goals. It should look like your day.
 
 The Task side is simple, and it should be.
 
 ### Man with an AI with a plan
 
-To create a goal, we describe what we want to do, and a goal gets created. Or we can create any part of it manually.
+To create a goal, we describe what we want to do, and a goal plan gets created. Or we can create any part of it manually.
 
-Consider the prompt "My wife, my two boys, aged 9 and 11, and I are going to Paris for three weeks. Help me plan it.". Or "I want to refurnish my bathroom". We may get some follow-ups, but they are limited at creation time. Most of the time the first few generated tasks are about detailing what we want to do. We also get a goal description that helps us understand what the goal includes. We also get references, if relevant. The goal is also ours. We can undo, update or delete everything that AI creates.
+Consider the prompt "My wife, my two boys, aged 9 and 11, and I are going to Paris for three weeks. Help me plan it.". Or "I want to refurnish my bathroom". We may get some follow-ups, but they are limited at creation time. Most of the time the first few generated tasks are about detailing what we want to do. We also get a goal description that helps us understand what the goal includes. The goal is also ours. We can add our own items, edit or delete anything AI creates, and undo changes.
 
-I have played with very far-fetched goals like "I'd like to help my son become an astronaut". The result is concrete milestones and practical advice making the goal feel real. I did have to remind myself my son has no interest in  being an astronaut. Point is the same applies to important goals we should do but always postpone. One of them was a very real one for me: doing the paperwork to get Irish citizenship. As an EU citizen, I don't _really_ need Irish citizenship but I have been living in Ireland for 16 years, and the rest of my family is Irish. Creating a goal in the app was a very low bar, and seeing the tasks made it concrete for the first time. And it helped me go through the steps to finally submit the paperwork.
+I have played with very far-fetched goals like "I'd like to help my son become an astronaut". The result is concrete milestones and practical advice making the goal feel real. I did have to remind myself my son has no interest in being an astronaut. Point is the same applies to important goals we should do but always postpone. One of them was a very real one for me: doing the paperwork to get Irish citizenship. As an EU citizen, I don't _really_ need Irish citizenship. But I have been living in Ireland for 16 years, my wife and children are Irish, and I do feel at home in Ireland. Creating a goal in the app was a very low bar, and seeing the tasks made it concrete for the first time. And it helped me go through the steps to finally submit the paperwork.
 
 Creating a goal and seeing the first steps as completable action items is astonishingly efficient at making a goal concrete and reachable.
 
 ### There are no missed deadlines
 
-There is only the reality of our lives. Plans are not there to make us feel guilty. They are there to show us the path. Motivational speech aside, the way we change a plan is by clicking on the item that needs updating, describing our reality, and asking to update the plan accordingly.
+There is only the reality of our lives. Plans are not there to make us feel guilty. They are there to show us the path. Motivational speech aside, the way we change a plan is by clicking on the item that needs updating (which could be a goal), describing our reality, and asking to update the plan accordingly.
 
 I have used Task Matter to try to run 5km in 20 minutes. It is a very common target for middle-aged men who refuse to admit they're ageing, like myself. I didn't make it. But the journey is what makes it worth it as they say. I didn't follow some of the plan, and generally ran my easy runs way too fast. But I've still had some of the most consistent training I've ever had, and got plenty of joy reaching a level of fitness I hadn't reached in years. At multiple stages, I reported not hitting milestones, and we reworked the plan to try to beat the plateauing I was experiencing, which did help.
 
@@ -90,7 +88,7 @@ That being said, I did add an "Achievements" space to Task Matter to gaze at all
 
 ## The Matter in Task Matter
 
-In Task Matter, the place where we have our AI conversations is called the "Matter". The Matter can be as empty or rich as it needs to be. We will also see that the Matter contains more than AI conversations.
+In Task Matter, the place where we have our AI conversations is called the "Matter". Every goal, task, and action item has its own Matter. The Matter can be as empty or rich as it needs to be. We will also see that the Matter contains more than AI conversations.
 
 ### Threads, like books on a shelf
 
@@ -98,35 +96,33 @@ Each Matter can contain multiple AI conversations as separate threads.
 
 We can have (a lot) more than one request when working on a task. The thread is the perfect UI artefact to collapse a conversation stemming from a starting question. When dogfooding Task Matter, the need for threads became overwhelming. Adding threads with generated titles made the whole design fall into place.
 
-Different threads can have different purposes. For example, one thread can be about understanding the work behind the task, with AI writing what will be used as a reference document. Another thread can be about detailing the plan after reaching a milestone. And yet another thread could be about feedback on a result.
+Different threads can have different purposes. For example, a thread could be about understanding the work behind the task, with AI writing what will be used as a reference document. Another thread can be about giving feedback on an intermediate result. And yet another thread could be updating the plan given what we learned.
 
 Besides tidying our conversations, threads help AI focus its context on the user intent. The more focused AI context is, the better the answer.
 
-But conversations threads are not the only objects we can put on our Matter-shelf.
+But conversation threads are not the only objects we can put on our Matter-shelf.
 
 ### The detail is in the Matter
 
-On the right we have the Matter, and on the left we have the plan. We want our plan on the left to stay as lean as possible. Getting an overview of the work, prioritising, choosing the next task, that's what the left panel is for. This means the details need to go somewhere. When we click on a plan item, we see its Matter. Could we get away with having all our task details also inside the Matter, mixed with AI conversations? Or would that end up a mess?
+As we've seen, on the right we have the Matter, and on the left we have the plan. We want our plan on the left to stay as lean as possible. Getting an overview of the work, prioritising, choosing the next task, that's what the left panel is for. Where do we put our plan item details then? When we click on a plan item, we see its Matter. Could we get away with having all our task details also inside the Matter, mixed with AI conversations? Or would that end up a mess?
 
 As you might have guessed, Task Matter went for it.
 
 The details present in the Matter include:
-- One description at the top, written and edited by AI, or the user
-- Attachments, for pieces of evidence, results, and reference material, can go anywhere
+- Description at the top, written and edited by AI or the user
+- Image and document attachments, for pieces of evidence, results, and reference material, can go anywhere
 - Informal user notes, with updates, constraints, timelines, can go anywhere
 
 The description is always at the top, the rest appears in chronological order of creation. Every entry can be deleted. And everything is undoable. The flow is:
 - we add updates when they come 
 - we ask questions when they come
 
-The Matter is a collaborative space for the user and AI with both complete freedom and the purpose of what it is attached to. The Matter as a focused AI-human collaborative space is what makes this project so exciting.
+In short, the Matter is a collaborative space for the user and AI. The selected plan item gives a starting scope, and the work may need us to add documents, pictures, notes, and ask AI a flurry of questions. That's what the Matter is for.
 
 # Task-first AI, because our goals are worth it
 
-Once the idea of task-first AI popped up, I couldn't unsee it. The plan gives AI a purpose and context. Working with AI helps us update that plan, as the first results and constraints appear. Each makes the other more useful.
+Planning is not Task Matter's end goal. The plan gives the human-AI collaboration purpose and context. And it also gives a space to work in. In turn the human-AI collaboration helps refresh the plan, as results and constraints appear. I like to see it as a loop feeding itself, like a wheel rolling in the direction we set it to.
 
-That doesn't mean AI does all the work and decides what we do. It is a collaboration where we bring decisions, updates, and sometimes modify the plan directly.
+There is still plenty to improve on and build. But I am already thrilled with the foundation. Being able to work inside the plan is a mindshift that feels right.
 
-There's still plenty I want to improve, especially in how the Matter can be specialised further to support different kinds of work. But I am already thrilled with the foundation. Being able to work inside the plan is a mindshift that feels right.
-
-You can give it a try by registering for the beta at taskmatter.ai.
+Give it a try by registering for the beta at taskmatter.ai.
