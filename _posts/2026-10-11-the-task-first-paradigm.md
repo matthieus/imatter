@@ -1,7 +1,10 @@
 ---
 title: "The Task Matter premise: task-first AI"
 date: 2026-10-11 10:00:00 +0100
+excerpt: "\"Task-first AI\" means agreeing with AI, and with yourself, on what you're doing before you ask for help."
 ---
+
+![A runner chatting on a bench with her coach, who holds an open training notebook](/assets/images/posts/2026-10-11-teal-bottle-beside-the-bench.webp){: .align-center style="width: 75%"}
 
 "Task-first AI" means agreeing with AI, and with yourself, on what you're doing before you ask for help. Think about the conversation you would have with a coach working with you on your marathon training. A coach who doesn't know the race date, your fitness level, or how your training is going can't help much. Even though AI is not a person, AI interactions have many of the same unwritten rules and pitfalls as working with a person. To avoid disappointment, you and AI both need a shared understanding of the goal, constraints, results, and what's been tried before.
 
