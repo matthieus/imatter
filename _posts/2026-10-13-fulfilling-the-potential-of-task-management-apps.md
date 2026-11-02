@@ -2,7 +2,7 @@
 title: "Fulfilling the potential of task-management apps"
 date: 2026-10-13 15:31:16 +0100
 ---
-AI creates an opportunity for task-management software to become what it always dreamt of being. And it works both ways: task-management software is also an opportunity for AI output to be a lot closer to what we need to reach our goals.
+AI creates an opportunity for task-management software to become what it always dreamt of being. And it works both ways: task-management software is also an opportunity for AI help to be closer to what we need to reach our goals.
 
 When working on its own, AI constantly goes from planning mode to doing the work. Planning and doing feed into each other. It's a marvel to see AI working on a complicated goal, constantly adjusting phases and tasks, reviewing and iterating. AI, with task-management software, gives us the opportunity to work using a similarly tight plan-work-plan loop.
 
