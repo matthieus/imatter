@@ -25,8 +25,10 @@ Unfortunately, without enough context, you get a focused, often interesting answ
 
 Besides, AI chats make it easy to ask ad hoc questions in a fresh session. But they make it hard to keep the work together. It's like calling our consultant every time we have a random question or task.
 
-> To do a good job, consultant and client need to write a plan they both agree on, and then work within that plan. It's the same with AI.
-{: .pull-quote}
+To do a good job, consultant and client need to write a plan they both agree on, and then work within that plan. It's the same with AI.
+
+> The plan is the interface through which I want to work with AI.
+{: .pull-quote aria-hidden="true"}
 
 If you're using AI to write code, you've probably seen the AI-generated plans. My codebase is drowning in them. We skim them and say "go ahead". And then we're surprised it's doing too much in some areas, or not enough in others. That's not the plan I'm talking about.
 

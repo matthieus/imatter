@@ -16,10 +16,19 @@ $background-color: #f9efe0;
 @import "minimal-mistakes"; // main partials
 
 .page__content blockquote.pull-quote {
-  font-size: 1.25em;
+  margin: 2em 0;
+  padding: 1em;
+  border-inline-start: 0;
+  border-block: 1px solid $border-color;
+  font-size: 1.4em;
   font-style: normal;
   font-weight: 600;
   line-height: 1.5;
+  text-align: center;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .author__urls .taskmatter-icon {
