@@ -1,5 +1,5 @@
 ---
-title: "Talking to AI like to a consultant"
+title: "Talking to AI like you would to a consultant"
 date: 2026-11-13
 ---
 
@@ -17,13 +17,16 @@ Consultants need to sync every once in a while. Everyone's priorities drift, and
 
 ## So what does it mean for AI?
 
-AI is pretty good at listening. Almost all AI interactions revolve around the AI chat after all. The structure is the bit that doesn't fit so well in our current relationship with AI.
+AI grilling us on what we want to do has gone out of fashion. Our AIs tend to guess from a quick question and assume a plausible meaning so that they can give us the satisfaction of an answer more quickly.
 
-Unlike consultants, AI is relatively cheap, fast, works tirelessly, scalable, and can access a mind bogglingly large amount of knowledge. AI's reassuring prose makes us believe it will do the right thing, and that it answers exhaustively. Nothing could be further from the truth. Without enough context, you get a focused, often interesting answer, but it's often beside the point and not the one you need.
+Unlike consultants, AI is relatively cheap, fast, tireless, and scalable, with access to a mind boggling amount of knowledge. AI's reassuring prose makes us believe it will do the right thing, and that it answers exhaustively.
 
-AI chats make it easy to ask ad hoc questions in a fresh session. But they make it hard to keep the work together. It's like calling our consultant every time we have a random question or task.
+Unfortunately, without enough context, you get a focused, often interesting answer, but it's often beside the point and not the one you need.
 
-To do a good job, consultant and client need to write a plan they both agree on. It's the same with AI.
+Besides, AI chats make it easy to ask ad hoc questions in a fresh session. But they make it hard to keep the work together. It's like calling our consultant every time we have a random question or task.
+
+> To do a good job, consultant and client need to write a plan they both agree on, and then work within that plan. It's the same with AI.
+{: .pull-quote}
 
 If you're using AI to write code, you've probably seen the AI-generated plans. My codebase is drowning in them. We skim them and say "go ahead". And then we're surprised it's doing too much in some areas, or not enough in others. That's not the plan I'm talking about.
 
